@@ -19,7 +19,6 @@ html{
     position: relative;
     width: 100%;
     transform: rotate(-35deg);
-
 }
 #container #box{
     position: relative;
@@ -32,24 +31,24 @@ html{
     animation: animatesurface 1.5s ease-in-out infinite;
 }
 #container #box #kube{
-position:relative;
-width: 200px;
-height: 200px;
-background: #03e9f4;
-box-shadow: 0 0 5px #03e9f4,
-0 0 25px #03e9f4,
-0 0 50px #03e9f4,
-0 0 150px #03e9f4;
-transform-origin: bottom right;
-animation: animka 1.5s ease-in-out infinite;
+    position:relative;
+    width: 200px;
+    height: 200px;
+    background: #03e9f4;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 150px #03e9f4;
+    transform-origin: bottom right;
+    animation: animka 1.5s ease-in-out infinite;
 }
 @keyframes animatesurface{
-0%{
-    transform: translateX(0);
-}
-100%{
-    transform: translateX(-200px);
-}
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-200px);
+    }
 }
 @keyframes animka{
     0%{
@@ -72,38 +71,41 @@ animation: animka 1.5s ease-in-out infinite;
     text-align: center;
     vertical-align: middle;
 }
+#opty{
+    text-align: left;
+}
 .profil{
     width: 50vh;
     height: 50vh;
-    border: 10px solid rgb(176, 66, 66);
-    box-shadow: 30px 30px 60px 30px rgba(176, 66, 66, 0.5);
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 30px 30px 60px 30px rgba(144, 144, 144, 0.338);
     position: relative;
     display: inline-block;
     z-index: 2;
     margin-top: 20vh;
     border-radius: 50%;
-    background-image: url(картинки/img12.jpg);
+    background-image: url(картинки/home1.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     padding: 0 auto;
-    animation: anib .5s ease-in-out infinite;
+    animation: anib .5s ease infinite;
 }
 @keyframes anib{
     0%{
-        border-top: 10px solid rgb(255, 10, 10);
+        border-top: 5px solid rgb(231, 231, 231);
     }
     33%{
-        border-right: 10px solid rgb(255, 0, 0);
+        border-right: 5px solid rgb(231, 231, 231);
     }
     66%{
-        border-bottom: 10px solid rgb(255, 10, 10);
+        border-bottom:5px solid rgb(231, 231, 231);
     }
     100%{
-        border-left: 10px solid rgb(255, 0, 0);
+        border-left: 5px solid rgb(231, 231, 231);
     }
 }
 #fon{
-    background-color: rgb(176, 66, 66);
+    background: linear-gradient(135deg, rgb(227, 185, 78), rgb(223, 83, 18));
     height: 100%;
     width: 100%;
     position: absolute;
@@ -112,18 +114,10 @@ animation: animka 1.5s ease-in-out infinite;
     left: 0;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
-    border-top:20px solid rgb(152, 48, 48);
+    border-top:3px solid rgb(220, 173, 3);
     color:white;
     text-align: left;
 }
-.group {
-    display: flex;
-  }
-  section {
-    min-width: 46%;
-    margin: 1%;
-    padding: 1%;
-  }
 .raz{
     position: absolute; 
 }
@@ -132,7 +126,6 @@ animation: animka 1.5s ease-in-out infinite;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 26px;
     color: white;
-    
 }
 #fon b{
     margin-left:100px;
@@ -171,7 +164,8 @@ animation: animka 1.5s ease-in-out infinite;
     background-image: url(картинки/free-icon-sun-5497397.png);
     background-size: 30px;
     background-repeat: no-repeat;
-    background-position: center;}
+    background-position: center;
+}
 .titl h2::after{
     font-family:'Courier New', Courier, monospace;
     font-size: 70px;
@@ -180,7 +174,7 @@ animation: animka 1.5s ease-in-out infinite;
     animation: typing 4s  alternate-reverse;
     width:30ch;
     overflow: hidden;
-    content: 'Новый GPT созданный в России';
+    content: 'Информационная страница ЛНТ';
 }
 .bur{
     width:50px;
@@ -212,103 +206,64 @@ animation: animka 1.5s ease-in-out infinite;
     top:20px;
     z-index: 3;
 }
-#body{
-    background: url(картинки/3.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: cover;
-}
-@keyframes typing{
-0%{
-    content: 'Новый GPT созданный в России|';
-}
-3.5%{
-    content: 'Новый GPT созданный в Росси|';
-}
-7%{
-    content: 'Новый GPT созданный в Росс|';
-}
-10.5%{
-    content: 'Новый GPT созданный в Рос|';
-}
-14%{
-    content: 'Новый GPT созданный в Ро|';
-}
-17.5%{
-    content: 'Новый GPT созданный в Р|';
-}
-22%{
-    content: 'Новый GPT созданный в |';
-}
-25.5%{
-    content: 'Новый GPT созданный в|';
-}
-29%{
-    content: 'Новый GPT созданный |';
-}
-32.5%{
-    content: 'Новый GPT созданный|';
-}
-36%{
-    content: 'Новый GPT созданны|';
-}
-39.5%{
-    content: 'Новый GPT созданн|';
-}
-43%{
-    content: 'Новый GPT создан|';
-}
-46.5%{
-    content: 'Новый GPT созда|';
-}
-50%{
-    content: 'Новый GPT созд|';
-}
-53.5%{
-    content: 'Новый GPT соз|';
-}
-57%{
-    content: 'Новый GPT со|';
-}
-60.5%{
-    content: 'Новый GPT с|';
-}
-64%{
-    content: 'Новый GPT |';
-}
-67.5%{
-    content: 'Новый GPT|';
-}
-71%{
-    content: 'Новый GP|';
-}
-74.5%{
-    content: 'Новый G|';
-}
-78%{
-    content: 'Новый |';
-}
-81%{
-    content: 'Новый|';
-}
-84.5%{
-    content: 'Новы|';
-}
-88%{
-    content: 'Нов|';
-}
-91.5%{
-    content: 'Но|';
-}
-94%{
-    content: 'Н|';
-}
-97.5%{
-    content: 'Н|';
-}
-100%{
-    content: 'Н|';
-}
+@keyframes typing {
+    0% { 
+        content: 'Информационная страница ЛНТ|';
+     }
+    3.7% {
+         content: 'Информационная страница ЛН|'; }
+    7.4% { 
+        content: 'Информационная страница Л|'; }
+    11.1% { 
+        content: 'Информационная страница |'; }
+    14.8% {
+         content: 'Информационная страница|'; }
+    18.5% {
+         content: 'Информационная страниц|'; }
+    22.2% {
+         content: 'Информационная страни|'; }
+    25.9% {
+         content: 'Информационная стран|'; }
+    29.6% {
+         content: 'Информационная стра|'; }
+    33.3% {
+         content: 'Информационная стр|'; }
+    37.0% {
+         content: 'Информационная ст|'; }
+    40.7% {
+         content: 'Информационная с|'; }
+    44.4% {
+         content: 'Информационная |'; }
+    48.1% { 
+        content: 'Информационная|'; }
+    51.9% { 
+        content: 'Информационна|'; }
+    55.6% {
+         content: 'Информационн|'; }
+    59.3% {
+         content: 'Информацион|'; }
+    63.0% {
+         content: 'Информацио|'; }
+    66.7% {
+         content: 'Информаци|'; }
+    70.4% {
+         content: 'Информац|'; }
+    74.1% {
+         content: 'Информа|'; }
+    77.8% {
+         content: 'Инфор|'; }
+    81.5% {
+         content: 'Инфо|'; }
+    85.2% {
+         content: 'Инф|'; }
+    88.9% {
+         content: 'Ин|'; }
+    92.6% { 
+        content: 'И|'; }
+    96.3% {
+         content: 'И|'; }
+    100% { 
+        content: 'И|'; }
 }
 body{
     background-color: #000000;
@@ -327,125 +282,50 @@ body{
     color:antiquewhite;
     background-color: transparent;
     cursor: pointer;
-   
 }
 .but button::after{
-    content: 'Продолжить';
-    
+    content: 'ЛНТ';
 }
 .but button:hover::after{
     content: 'Нажми';
-    
 }
 .but{
     text-align: center;
     margin:70vh auto;
 }
-.ref{
-    width: 60vh;
-    height: 70vh;
-    margin: 10vh auto;
-    border-radius: 5vh;
-    justify-content: center;
-    display: flex;
-    border: 0.2vh solid rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.224);
-    backdrop-filter: blur(1vh)
-}
-.avt{
-    width:40vh;
-    justify-content: right;
-    height: 80vh;
-    border-radius: 2vh;
-    float:right;
-    color:rgb(255, 255, 255);
-    position: absolute;
-}
-.krest{
-    color:rgb(255, 255, 255);
-    font-size: 7vh;
-    text-align: right;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-right: -8vh;
-}
-.ref a{
-    text-decoration: none;
-}
-.priv{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 7vh;
-    color:rgb(0, 0, 0);
-    text-align: center;
-}
- .form-control{
-    background: transparent;
-    border-bottom: 0.1vh solid rgb(0, 0, 0);
-    border-right:none ;
-    border-top:none ;
-    border-left:none ;
-    text-decoration: none;
-    font-size: 3.5vh;
-    color:rgb(0, 0, 0);
-    font-family:sans-serif;
-    text-align: left;
-    outline: none;
-    margin-top: 8vh;
- }
- .ref button{
-    border-radius: 4vh;
-    border: 1px solid rgb(255, 255, 255);
-    text-align: center;
-    font-size: 3.5vh;
-    width: 40vh;
-    padding: 1vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:rgb(0, 0, 0);
-    background-color: white;
-    cursor: pointer;
-    margin-top: 40px;
-    transition: 0.5s;
-    margin-top: 7vh;
- }
- label{
-    color:black;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- }
- .Reg {
-    text-align: center;
- }
- .info img{
-    width:200vh;
-   background-size: cover;
-    margin: -400px -20px ;
+.info img{
+    width:250vh;
+    background-size: cover;
+    margin: -45vh -2.4vh ;
     position: absolute;
     z-index: 2;
- }
- .inf img{
+}
+.inf img{
     width:200px;
     margin: -400px 0px 100px 0px;
- }
- .inf{
+}
+.inf{
     text-align: center;
     position: absolute;
     margin: -1500px auto;
     z-index: 1;
- }
- .shad{
+}
+.shad{
     height: 2000px;
     width:100%;
     background-size: cover;
     margin-top: 200px;
- }
- .in img{
+}
+.in img{
     width:200px;
     position: absolute;
     z-index: 3;
     opacity: 10;
- }
- .in{
+}
+.in{
     margin: 0px 0px 100px;
- }
- .fon{
+}
+.fon{
     background: linear-gradient(rgb(6,22,37), rgb(0, 0, 0) );
     width:100%;
     height:4500px;
@@ -453,36 +333,46 @@ body{
     background-size: cover;
     position: absolute;
     z-index: 3;
- }
- .run{
+}
+.run{
     width:1000px;
-    background-color:rgba(162, 0, 255, 0.4);
+    background-color:rgba(255, 0, 0, 0.4);
     border-radius: 20px;
- }
- .okr{
+}
+.okr{
     text-align: center;
     color:white;
     font-family:'Courier New', Courier, monospace;
     font-size: 70px;
- }
- .span{
+}
+.span{
     width:5px;
     height:140vh;
     position:relative;
     border-left: 3px dashed white;
     text-align: left;
- }
- .stop{
+}
+.stop{
     width:800px;
     height:400px;
     background-color: gba(255, 255, 255, 0.4);
     color:white;
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
- }
+}
 .stop p{
     text-align: left;
-    margin: 0px -20px auto
+    margin: 0px -20px auto;
+    color:green;
+}
+.stop1 p{
+    color:green;
+}
+.stop3 p{
+    color:green;
+}
+.stop4 p{
+    color:green;
 }
 .stop h3{
     font-family: 'Courier New', Courier, monospace;
@@ -542,7 +432,6 @@ display: none;
         text-shadow: #fc0 1px 0 10px;
     }
 }
-
 .stop1{
     width:800px;
     height:400px;
@@ -552,17 +441,7 @@ display: none;
     font-family: 'Courier New', Courier, monospace;
     margin: -110vh 0vh 0px -87vh;
     text-align: right;
- }
- .Reg p a{
-    color:#000;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, bold;
- 
 }
- .Reg p {
-    color:#000;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2vh;
- }
 .stop1 p{
     text-align: right;
     margin: 0px 0% auto
@@ -571,10 +450,6 @@ display: none;
     font-family: 'Courier New', Courier, monospace;
     font-size: 35px;
     text-decoration: none;
-}
-.stop1 b{
-    animation: lamp 1s linear infinite;
-    transition:all 1s ease
 }
 .stop3{
     width:800px;
@@ -585,7 +460,7 @@ display: none;
     font-family: 'Courier New', Courier, monospace;
     margin-top: -75vh;
     text-align: left;
- }
+}
 .stop3 p{
     text-align: left;
     margin: 0px -20px auto
@@ -596,10 +471,6 @@ display: none;
     text-decoration: none;
     margin-left: 20px;
 }
-.stop3 b{
-    animation: lamp 1s linear infinite;
-    transition:all 1s ease
-}
 .stop4{
     width:800px;
     height:400px;
@@ -609,7 +480,7 @@ display: none;
     font-family: 'Courier New', Courier, monospace;
     margin: -40vh 0vh 0px -87vh;
     text-align: right;
- }
+}
 .stop4 p{
     text-align: right;
     margin: 0px 0% auto
@@ -619,38 +490,33 @@ display: none;
     font-size: 35px;
     text-decoration: none;
 }
-.stop4 b{
-    animation: lamp 1s linear infinite;
-    transition:all 1s ease
-}
 .span1{
     width:5px;
     height:1vh;
     position:relative;
     border-left: 3px dashed white;
- }
- .block{
+}
+.block{
     float: left;
     width: 550px;
     height: 550px;
-     color:black;
-      margin-top: 60px;
-       border: 2px solid rgb(255, 255, 255);
-       z-index: 10;
-       position: relative;
-       border-radius: 20px;
-       font-size: 25px;
-       margin-left:30px;
-       font-family: 'Courier New', Courier, monospace;
-      transition: 1.5s ease-in-out;
-       display: flex;
-       background-color: #ffffff;
-      
- }
- .p{
+    color:black;
+    margin-top: 60px;
+    border: 2px solid rgb(255, 255, 255);
+    z-index: 10;
+    position: relative;
+    border-radius: 20px;
+    font-size: 25px;
+    margin-left:30px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 1.5s ease-in-out;
+    display: flex;
+    background-color: #ffffff;
+}
+.p{
     justify-content: center;
     display: flex;
- }
+}
 .block .pot{
     position:absolute;
     text-align:left;
@@ -671,7 +537,8 @@ display: none;
 #curs{
     cursor: pointer;
     position: absolute;
-    width: 170vh;
+    width: 175vh;
+    height: 5vh;
     font-size: 20px;
     border:none;
     transition: 0.2s;
@@ -685,7 +552,7 @@ display: none;
     padding: 10px 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
-    content: "Попробовать GPT";
+    content: "Сайт ЛНТ";
 }
 #information1::after{
     z-index: 7;
@@ -695,7 +562,10 @@ display: none;
     border-radius: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
-    content: "Зарегистироваться";
+    content: "Перейти на Moodle";
+}
+.inline a{
+    text-decoration: none;
 }
 #information:hover::after{
     z-index: 7;
@@ -703,10 +573,10 @@ display: none;
     border:1.5px solid white;
     color: rgb(176, 66, 66);
     border-radius: 20px;
-    padding: 10px 100px;
+    padding: 10px 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
-    content: "Test GPT";
+    content: "Переходи";
     background-color: white;
 }
 #information1:hover::after{
@@ -717,8 +587,8 @@ display: none;
     border-radius: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
-    padding: 10px 130px;
-    content: "Log In";
+    padding: 10px 30px;
+    content: "Выполняй задания";
     background-color: white;
 }
 #information{
@@ -730,34 +600,6 @@ cursor: pointer;
 display: inline;
 margin-left: 30px;
 cursor: pointer;
-}
-#google{
-background-image: url(картинки/i.webp);
-z-index: 7;
-    position: relative;
-    height: 50px;
-    width: 50px;
-    background-position: center;
-    background-size: contain;
-    display: inline-block;
-    bottom: -15px;
-    border-radius: 50%;
-    margin-left: 60px;
-    cursor: pointer;
-}
-#yandex{
-    background-image: url(картинки/Yandex.Browser_icon.svg.png);
-    z-index: 7;
-        position: relative;
-        height: 50px;
-        width: 50px;
-        background-position: center;
-        background-size: contain;
-        display: inline-block;
-        bottom: -15px;
-        border-radius: 50%;
-        margin-left: 60px;
-        cursor: pointer;
 }
 .vops{
     z-index: 5;
@@ -774,8 +616,8 @@ z-index: 7;
 }
 .nko
 {
-    text-align: left;
-padding-left: 120px;
+text-align: left;
+padding-left: 12vh;
 width: 100%;
 }
 .pot img{
@@ -792,14 +634,14 @@ width: 100%;
 .vops{
     float: right;
     position: relative;
-    margin-right: 200px;
-    margin-top: 100px;
+    margin-right: 20vh;
+    margin-top: 20vh;
 }
 .vop{
     color:white;
     font-family:'Courier New', Courier, monospace;
     font-size: 35px;
-    width:700px;
+    width:72vh;
     height:100px;
     border:2px solid white;
     border-radius:25px;
@@ -831,8 +673,8 @@ b{
     transition: 1s;
 }
 .vip{
-    height:350px;
-    width:680px;
+    height:20vh;
+    width:70vh;
     background-color: white;
     border-radius: 25px;
     font-size: 24px;
@@ -864,29 +706,21 @@ b{
 .sbor{
     margin-top: 50px;
     justify-content: center;
-    display: flex;}
-    .zagol{
-        font-size: 70px;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: white;
-        margin-top: -100px;
-        text-align: center;
-        width: 100%;
-        position:relative
-    }
-    #doby{
-        background: black;
-        height: 10px;
-         margin-bottom: 70px;
-    }
-    .ret{
-        width:100%;
-        position: absolute;
-    }
- .osn img{
+    display: flex;
+}
+.zagol{
+    font-size: 70px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin-top: -100px;
+    text-align: center;
+    width: 100%;
+    position:relative
+}
+.osn img{
     width:850px
- }
- .vn{
+}
+.vn{
     height:350px;
     width:450px;
     border:2px solid brown;
@@ -897,271 +731,18 @@ b{
    font-size: 25px;
    font-family: 'Courier New', Courier, monospace;
    padding-left: 20px;
- }
- .rty{
+}
+.rty{
     font-size: 30px;
     margin-bottom: 20px;
     font-weight: bold;
     margin-top: 20px;
- }
- .chat-container {
-    width: 35vw;
-    height: 48vw;
-    margin: auto;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    background:transparent;
-    background-size: cover;
 }
-
-.message-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.message-user {
-    text-align: right;
-    max-width:17vw;
-    color: rgb(0, 0, 0);
-    text-align: left;
-    background-color: #ffffff;
-    border-radius: 1vw 1vw 0vw 1vw;
-    padding: 1vw;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    font-size: 1vw;
- margin-left: 10vw;
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.message-bot {
-    text-align: left;
-    max-width: 70%;
-    width:17vw;
-    text-align: left;
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
-    padding: 1vw;
-    margin-top: 1vw;
-    font-size: 1vw;
-    color:white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.got{
-    width:100%;
-    min-height: 30vw;
-    background-color:white;
-    background-attachment: fixed;  
-    position:relative;
-    padding: 3vw;
-}
-.chat-container input[type=text]{
-    width: 70%;
-    font-size: 1vw;
-    background-color: #000000;
-    color: #ffffff;
-    border:none;
-    outline: none;
-    border-radius: 0;
-}
-.chat-container input[type=text], button {
-    padding: 10px;
-    outline: none;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-radius: 0vw;
-}
-
-.chat-container input[type=text]:focus {
-    border-color: #000000;
-    border-radius: 0;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid white ;
-}
-.chat-container input[type=text]:focus::placeholder {
-    color: transparent;
-}
-.chat-container button {
-    cursor: pointer;
-    background-color: #ffa500;
-    color: white;
-    transition: all 0.3s ease-in-out;
-    width: 9vw;
-    background-color: #000000;
-    border-radius: 8vw;
-    height:3vw;
-    font-size: 1vw;
-}
-.chat-container input
-.chat-container input:hover,
-.chat-container input:focus,
-.chat-container input:active {
-  box-shadow: 0 0 0 30px rgb(0, 0, 0) inset !important;
-  color:white !important;
-}
-.chat-container button:hover {
-    transform: scale(1.05);
-background-color: #ffffff;
-color:black;
-border: 1px solid black;
-}
-    #doby h1{
-        text-align: center;
-        font-size: 3vw;
-        font-family: 'Courier New', Courier, monospace;
-        color: white;
-    }
-    .chat-container div{
-        background-color:transparent;
-        width: 34vw;
-        border-radius: 4vw;
-        padding-left: 1vw;
-    }
-    .scroll{
-        overflow-y: scroll;
-        background-color: rgba(0, 0, 0, 0.1);
-        height: 33vw;
-        overflow-x: hidden;
-        width: 100%;
-    }
-    .scroll::-webkit-scrollbar {
-        width: 10px;
-    }
-    .scroll::-webkit-scrollbar-track {
-        background-color: #f1f1f1;
-        border-radius: 5px;
-        height: 80%;
-        display: none; 
-    }
-    .scroll::-webkit-scrollbar-thumb {
-        background-color: #1900ff;
-        background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .25) 25%,
-                          transparent 25%,
-                          transparent 50%,
-                          rgba(255, 255, 255, .25) 50%,
-                          rgba(255, 255, 255, .25) 75%,
-                          transparent 75%,
-                          transparent);
-                          border-radius: 5px;
-        cursor: pointer;
-        display: none; 
-      }
-    .scroll::-webkit-scrollbar-thumb:hover {
-        background-color: #000000;
-        border-radius: 5px;
-    }
-    .scroll::-webkit-scrollbar-button {
-        display: none; 
-    }
-    .scroll::-webkit-scrollbar-corner {
-        background-color: transparent;
-    }
-    .pet{
-        color:white;
-        font-size:1.5vw;
-        font-weight: bold;
-    }
-    .pomo{
-        color:#8b8b8b;
-        font-size:1vw;
-        font-family: 'verdana', sans-serif;
-    }
- .obc{
-    font-family:Arial, sans-serif;
-    align-items: center;
-    height:1vw;
-    transition: 2s;
-    width: 1vw;
- }
- .mir{
-    background-image: url(картинки/fondos.jpg);
-    background-size: 1000px auto;
-    background-repeat: no-repeat;
-    width:1000px;
-    height:550px;
-    position: relative;
-   margin-left: auto;
-   margin-right: auto;
-   border-radius: 30px;
- }
- .logo{
-    background-image: url(картинки/svg.png);
-    background-size: 90%;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 250px;
-    height: 100px;
- }
- .clogo{
-    width:1000px;
-    height:550px;
-    align-items: end;
-    justify-items:end ;
-    position:absolute;
-    display:grid
- }
- @font-face {
+@font-face {
 	font-family: 'Credit'; 
 	src: url(CreditCard.ttf); 
 }
- .num{
-    position:absolute;
-    color:#000000;
-    font-size: 50px;
-    font-family:Credit;
-    font-style:initial;
-    text-shadow: -0.1px -0.1px 0 #ffffff, 0.1px -0.1px 0 #ffffff, -0.1px 0.1px 0 #ffffff, 0.1px 0.1px 0 #ffffff
- }
- .nums{
-    width:1000px;
-    height:550px;
-    align-items: center;
-    justify-items:center ;
-    position:absolute;
-    display:grid;
- }
- .num::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 50px;
-    background: rgb(255, 255, 255);
-    animation: animate 2s linear infinite;
-}
-
-@keyframes animate {
-    0% {
-        left: 0;
-        width: 10px;
-    }
-    40%{
-        width:0;
-    }
-    50% {
-        left: 100%;
-        width: 0px;
-    }
-    60%{
-        width:0;
-    }
-
-    100% {
-        left: 0;
-        width: 10px;
-    }
-}
-.avt input:focus{
-    background: transparent !important;
-    }
-.avt input:active{
-    background: transparent !important;
-    }
-.avt input{
+#input{
+    display: none;
     width: 100%;
 }
