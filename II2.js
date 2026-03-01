@@ -246,7 +246,7 @@ ket = true;
         get.style.transition = "2s";
 }
         else{
-            body.style.background="linear-gradient(rgb(162, 0, 255), rgb(0, 153, 255)";
+            body.style.background="linear-gradient(1bfff3, aeffae)";
             h2.style.color="white";
             toti.style.color = "white";
 toti.style.borderColor = "white";
@@ -341,8 +341,8 @@ ket = false;
         bur1.style.marginTop="3px";
         gyui.style.display="block";
         gyui1.style.display="none";
-        body11.style.background="linear-gradient(rgb(162, 0, 255), rgb(0, 153, 255) )";
-        body.style.background="linear-gradient(rgb(162, 0, 255), rgb(0, 153, 255)";
+        body11.style.background="linear-gradient(1bfff3, aeffae)";
+        body.style.background="linear-gradient(1bfff3, aeffae)";
                     h2.style.color="white";
                     toti.style.color = "white";
         toti.style.borderColor = "white";
@@ -773,6 +773,7 @@ window.addEventListener('load', function() {
     setTimeout(() => {
         preloader.style.display = 'none'; 
         workingArea.style.display = 'block'; 
-        body.style.background="linear-gradient(rgb(162, 0, 255), rgb(0, 153, 255)";
+        body.style.background="linear-gradient(1bfff3, aeffae)";
     }, 1000);
+
 });
