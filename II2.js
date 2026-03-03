@@ -688,6 +688,43 @@ ket = false;
             });
         });
 
+        document.addEventListener('DOMContentLoaded', function() {
+            let mus = document.querySelectorAll('.mus');
+            
+            mus.forEach(mus => {
+                mus.style.opacity = "0";
+                mus.style.transform = "translateY(30px)";
+                mus.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+            });
+        
+            function checkBlocksVisibility() {
+                let windowHeight = window.innerHeight;
+                
+                mus.forEach(mus => {
+                    let musPosition = mus.getBoundingClientRect().top;
+                    
+                    if (musPosition < windowHeight - 350) {
+                        mus.style.opacity = "1";
+                        mus.style.transform = "translateY(0)";
+                    } else {
+                        mus.style.opacity = "0";
+                        mus.style.transform = "translateY(50px)";
+                    }
+                });
+            }
+            
+            checkBlocksVisibility();
+            let isScrolling = false;
+            window.addEventListener('scroll', function() {
+                if (!isScrolling) {
+                    window.requestAnimationFrame(function() {
+                        checkBlocksVisibility();
+                        isScrolling = false;
+                    });
+                    isScrolling = true;
+                }
+            });
+        });
 
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -777,4 +814,5 @@ window.addEventListener('load', function() {
     }, 1000);
 
 });
+
 
