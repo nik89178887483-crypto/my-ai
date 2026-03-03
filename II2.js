@@ -196,42 +196,36 @@ vn1.style.color="white";
 vn1.style.background="black";
 rty1.style.color="white";
 sb1.style.background="black";
-sb1.style.border="1px solid white";
 vn2.style.border= "2px solid white";
 vn2.style.borderStyle="dashed";
 vn2.style.color="white";
 vn2.style.background="black";
 rty2.style.color="white";
 sb2.style.background="black";
-sb2.style.border="1px solid white";
 vn3.style.border= "2px solid white";
 vn3.style.borderStyle="dashed";
 vn3.style.color="white";
 vn3.style.background="black";
 rty3.style.color="white";
 sb3.style.background="black";
-sb3.style.border="1px solid white";
 vn4.style.border= "2px solid white";
 vn4.style.borderStyle="dashed";
 vn4.style.color="white";
 vn4.style.background="black";
 rty4.style.color="white";
 sb4.style.background="black";
-sb4.style.border="1px solid white";
 vn5.style.border= "2px solid white";
 vn5.style.borderStyle="dashed";
 vn5.style.color="white";
 vn5.style.background="black";
 rty5.style.color="white";
 sb5.style.background="black";
-sb5.style.border="1px solid white";
 vn6.style.border= "2px solid white";
 vn6.style.borderStyle="dashed";
 vn6.style.color="white";
 vn6.style.background="black";
 rty6.style.color="white";
 sb6.style.background="black";
-sb6.style.border="1px solid white";
 ket = true;
     ret.style.backgroundColor = "transparent";
     ret.style.color = "white";
@@ -814,5 +808,6 @@ window.addEventListener('load', function() {
     }, 1000);
 
 });
+
 
 
